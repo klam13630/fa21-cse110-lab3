@@ -20,13 +20,21 @@
         
         <main>
             <h2 id = "description">
-                <a href = "https://en.wikipedia.org/wiki/Pomodoro_Technique" Pomodoro Timer> Pomodoro Technique </a>
+                <a href = "https://en.wikipedia.org/wiki/Pomodoro_Technique" Pomodoro Technique> Pomodoro Technique </a>
             </h2>
 
-            <p>
-                <img src = "https://images-na.ssl-images-amazon.com/images/I/71CRFjHr9tL.png" alt = Pomodoro Clock> <br>
-                The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, <strong> 25 minutes in length, separated by short breaks. </strong>
-            </p>
+            <img src = "https://images-na.ssl-images-amazon.com/images/I/71CRFjHr9tL.png" alt = Pomodoro Clock> <br>
+            <details>
+                <summary>Pomodoro Technique</summary>
+                <p>
+                    The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, <strong> 25 minutes in length, separated by short breaks. </strong>
+                </p>
+            </details>
+
+            <audio controls>
+                <source src = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">
+                Your browser does not support the audio tag.
+            </audio>
 
             <h2 id = "#attendance">
                 Attendance
@@ -64,8 +72,49 @@
                 <li> <a href = "#Objectives"> Objectives </a> </li>
                 <li> <a href = "#bottom"> Bottom </a> </li>
             </ul>
-         </nav>
+        </nav>
         
+        <video controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" >
+            Your browser does not support the video tag.
+        </video>
+
+        <form action="/action_page.php" method="get">
+            <fieldset>
+                <textarea id="text" name="text" rows=4 cols=20>
+                Checkboxes are above...
+                </textarea> <br>
+                <input type="text" id="playerName" name="playerName"> <br>
+
+                <input type="radio" id="play1" name="play1">
+                <label for="play1">Player 1</label><br/>
+
+                <input type="radio" id="play2" name="play2">
+                <label for="play2">Player 2</label><br/>
+
+                <input type="date" id="date1" name=text1> <br>
+
+                <input list="classes" id="classes-choice" name="classes-choice" />
+
+                <datalist id="classes">
+                    <option value="Warrior">
+                    <option value="Assassin">
+                    <option value="Mage">
+                    <option value="Healer">
+                </datalist> <br>
+
+                <label for="languages">Choose a language:</label>
+                <select name="languages" id="languages">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascript</option>
+                </select> <br>
+
+                <input type="button" value="Submit">
+
+            </fieldset>
+            
+          </form>
         
     </body>
 </html>
