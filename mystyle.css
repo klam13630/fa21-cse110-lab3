@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(255, 229, 180); 
+    /* the most generic background color I could think of */
+}
+
+strong {
+    color: rgb(144, 144, 148);
+  }
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+
+
+
+
