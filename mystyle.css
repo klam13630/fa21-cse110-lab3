@@ -3,6 +3,8 @@ body {
     /* the most generic background color I could think of */
 }
 
+
+
 strong {
     color: rgb(144, 144, 148);
   }
@@ -32,7 +34,7 @@ ul {
     border: 1px solid rebeccapurple;
     border-style: dashed;
     border-radius: 10%;
-    padding: 5ex;
+    padding-left: 5ex;
     list-style: none;
 }
 
@@ -71,7 +73,7 @@ div.name {
 }
 
 * {
-    font-family: sans-serif;
+    font-family: 'robotoSlab';
 }
 
 .flex-container {
@@ -84,7 +86,51 @@ div.name {
     margin: 10px;
     padding: 20px;
     font-size: 30px;
+    flex-direction: column;
+    flex-wrap:wrap;
+    flex-basis:25%;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+  }
+
+  .one {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  @font-face {
+    font-family: 'robotSlab';
+    src: url('RobotoSlab-VariableFont_wght.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+span,
+div {
+  padding-top: 2%;
+}
+
+li li {
+    list-style-type: circle;
+  }
+
+h2 + span {
+    color:cornflowerblue;
+}
+
+h1 ~ section {
+    color:darkgoldenrod;
+}
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: #FFAAFF;
+    }
+}
 
 
