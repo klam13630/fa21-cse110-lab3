@@ -19,7 +19,7 @@
             <h1>
                 Pomodoro Timer Meeting Minutes
             </h1>
-            <section>
+            <section class=details>
                 <b>Date:</b> October 2, 2021 <br>
                 <b>Start Time:</b> 1:00 PM <br>
                 <b>End Time:</b> 1:30 PM <br>
@@ -32,11 +32,11 @@
                 <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique"> Pomodoro Technique </a>
             </h2>
 
-            <img src="https://images-na.ssl-images-amazon.com/images/I/71CRFjHr9tL.png" alt="Pomodoro Clock"> <br>
+            <img id="clock" src="https://images-na.ssl-images-amazon.com/images/I/71CRFjHr9tL.png" alt="Pomodoro Clock"> <br>
             <details>
                 <summary>Pomodoro Technique</summary>
                 <p>
-                    The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, <strong> 25 minutes in length, separated by short breaks. </strong>
+                    <div class="name"> The Pomodoro Technique</div> is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into intervals, <strong> 25 minutes in length, separated by short breaks. </strong>
                 </p>
             </details>
 
@@ -52,27 +52,27 @@
             <span>
                 List of people participating.
             </span>
-                <ul>
+                <ol>
                     <li> Captain America</li>
                     <li> Iron Man</li>
                     <li> Thor </li>
                     <li> Hulk </li>
                     <li> Black Widow </li>
                     <li> Hawkeye </li>
-                    </ul>
-            <h2 id="#topics">
+                </ol>
+            <h2 class = "topics" id="#topics">
                 Topics
             </h2>
 
             <div>
-                <ol>
+                <ul>
                     <li> Update on UI by <i>Captain America</i> (5 min) </li>
                     <li> <input type="checkbox" id="capComplete" name=complete1 value="Cap"> Due Date: 10/04/2021
                     <li> Progress on HTML by <i>Iron Man</i> (5 min)</li>
                     <li> <input type="checkbox" id="imComplete" name=complete2 value="IM"> Due Date: 10/06/2021
                     <li> Survey Results by <i>Hulk</i> (10 min) </li>
                     <li> <input type="checkbox" id="hulkComplete" name=complete3 value="Hulk"> Due Date: 10/08/2021
-                </ol>
+                </ul>
             </div>
         </main>
         <nav>
@@ -88,7 +88,7 @@
             This is the end of the Meeting Minutes.
         </footer>
         
-        <video controls>
+        <video class=video controls>
             <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" >
             Your browser does not support the video tag.
         </video>
@@ -124,11 +124,17 @@
                     <option value="javascript">Javascript</option>
                 </select> <br>
 
-                <input type="button" value="Submit">
+                <input type="button" class = "button1" value="Submit">
 
             </fieldset>
             
           </form>
+
+          <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
         
     </body>
 </html>

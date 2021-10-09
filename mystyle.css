@@ -10,9 +10,81 @@ strong {
 h1 {
     color: black;
     text-align: center;
+    margin-top: 10px;
+}
+
+.topics {
+    color: #0000FF;
+    text-align: center;
+}
+
+.video {
+    position:fixed;
+    top:500px; left:1200px; 
+    padding-right: 10%;
+    padding-bottom: 10%;
+    width: 300px;
+    height: 200px;
+    margin: auto
+}
+
+ul {
+    border: 1px solid rebeccapurple;
+    border-style: dashed;
+    border-radius: 10%;
+    padding: 5ex;
+    list-style: none;
+}
+
+ol {
+    color: hsla(289, 100%, 50%, 1);
+    margin-bottom: 1cm;
+    display:block;
 }
 
 
+.details {
+    text-align: right;
+    margin-right: 10em;
+    text-decoration: underline;
+}
+
+div.name {
+    display:block;
+}
+
+#clock {
+    position: relative;
+    top: 40px; left: 300px;
+    height: 30px;
+    width: 30px;
+    min-width: 10em;
+    min-height: 10em;
+}
+
+.button1:hover {
+    color:red;
+}
+
+.button1:active {
+    color:green;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex; /* or inline-flex */
+    background-color: purple;
+}
+
+.flex-container > div {
+    background-color:yellow;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
 
 
 
